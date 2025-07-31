@@ -1,10 +1,23 @@
 import reactImg from './assets/react1.png';
+import componentsImg from './assets/Components.png'
 
 
 const reactDescription = ["Fundamental", "Core", "Crucial"]
 
 function getRandomInt(max){
   return Math.floor(Math.random() * (max + 1))
+}
+
+// component for core concepts pf react
+
+function CoreConcept(props) {
+  return (
+   <li>
+    <img src={props.image}></img>
+    <h3>Title: {props.title}</h3>
+    <p>Description : {props.description}</p>
+   </li>
+  )
 }
 
 // create component , always starts with capital latter
@@ -30,7 +43,19 @@ function App() {
     <div>
       <Header />     {/* calling Header component here */}
       <main>
-        <h2>Time to get started!</h2>
+         <section id="core-concepts">
+          <h2>Core Concepts</h2>
+          <ul>
+            <CoreConcept
+              title="Components"
+              description="The core UI building block."
+              image={componentsImg}
+            />
+            <CoreConcept title="Props" />
+            <CoreConcept />
+            <CoreConcept />
+          </ul>
+        </section>
       </main>
     </div>
   );
