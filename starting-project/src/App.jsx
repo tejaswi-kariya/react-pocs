@@ -1,17 +1,15 @@
-import reactImg from './assets/react1.png';
+
 import componentsImg from './assets/Components.png'
 import {CORE_CONCEPTS} from './data.js'
+import Header from './components/Header.jsx';
+import CoreConcept from './components/CoreConcept.jsx';
 
 
-const reactDescription = ["Fundamental", "Core", "Crucial"]
 
-function getRandomInt(max){
-  return Math.floor(Math.random() * (max + 1))
-}
 
-// component for core concepts pf react
+// component for core concepts 0f react
 
-function CoreConcept({image, title, description}) {
+/* function CoreConcept({image, title, description}) {
   return (
    <li>
     <img src={image}></img>
@@ -19,10 +17,10 @@ function CoreConcept({image, title, description}) {
     <p>Description : {description}</p>
    </li>
   )
-}
+} */
 
 // create component , always starts with capital latter
-function Header() {
+/* function Header() {
 
   const description = reactDescription[getRandomInt(2)]
 
@@ -36,7 +34,7 @@ function Header() {
       </p>
     </header>
   );
-}
+} */
 
 
 function App() {
