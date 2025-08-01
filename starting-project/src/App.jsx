@@ -62,12 +62,12 @@ function App() {
         <section id="examples">
            <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
+            <TabButton>Components</TabButton>                    {/* Using children */}
             <TabButton>JSX</TabButton>
             <TabButton>Props</TabButton>
             <TabButton>State</TabButton>
           </menu>
-          {/* <TabButton label="Components"></TabButton> */}
+          {/* <TabButton label="Components"></TabButton> */}    {/* Using Attribute */}
         </section>
       </main>
     </div>
