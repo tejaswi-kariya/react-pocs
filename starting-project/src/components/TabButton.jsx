@@ -8,14 +8,17 @@ retutn (
     return (<button>{label}</button>)
 } */
 
-    export default function TabButton ({children}){
+    export default function TabButton ({children, onSelect, isSelected}){
       
-        function handleClick (){
+        /* function handleClick (){
             console.log("Hello")
-        }
+        } */
 
      return (
-     <button onClick={handleClick}>{children}</button>    /*  calling function as value  when click on button*/
-     )
+      <li>
+      <button onClick={onSelect} className={isSelected ? 'active' : undefined}>{children}</button>
+      </li> 
+     /* <button onClick={handleClick}>{children}</button>  */  /*  calling function as value  when click on button*/
+    )
         
 }
