@@ -33,7 +33,9 @@ export default function Examples (){
       /*   <section id="examples">
            <h2>Examples</h2> */
            <Section title="Example" id="examples" >
-           <Tabs buttons= {
+           <Tabs       /* ButtonContainer='menu' */
+           
+             buttons= {
             <>
             <TabButton onClick={() => handleSelect("components")}  isSelected={selectedTopic === 'components'}>
               Components</TabButton>                    {/* Using children */}
