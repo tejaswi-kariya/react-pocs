@@ -8,7 +8,7 @@ retutn (
     return (<button>{label}</button>)
 } */
 
-    export default function TabButton ({children, onSelect, isSelected}){
+    export default function TabButton ({children, isSelected , ...props}){
       
         /* function handleClick (){
             console.log("Hello")
@@ -16,8 +16,14 @@ retutn (
 
      return (
       <li>
-      <button onClick={onSelect} className={isSelected ? 'active' : undefined}>{children}</button>
+
+       <button className={isSelected ? 'active' : undefined} {...props}>             {/* forwarding props */}
+        {children}
+      </button>
       </li> 
+
+      /* <button onClick={onSelect} className={isSelected ? 'active' : undefined}
+      >{children}</button> */
      /* <button onClick={handleClick}>{children}</button>  */  /*  calling function as value  when click on button*/
     )
         
